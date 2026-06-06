@@ -1,0 +1,111 @@
+:root {
+  --bg: #0E0B0A;          /* deep warm black */
+  --panel: #1A1410;       /* wood / throne room */
+  --accent: #D4AF37;      /* royal gold */
+  --accent2: #B8892F;     /* aged gold */
+  --text: #F5E9D0;        /* parchment */
+  --muted: #B8A88A;       /* faded ink */
+  --border: #2A1F18;      /* leather / wood trim */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1A1410, var(--bg));
+  color: var(--text);
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  color: var(--muted);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 130px 20px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  letter-spacing: 4px;
+  color: var(--accent);
+}
+
+.hero p {
+  color: var(--muted);
+  margin: 15px auto;
+  max-width: 650px;
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(145deg, var(--accent), var(--accent2));
+  color: #1A1410;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+/* SECTION */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 20px;
+  width: 260px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  color: var(--accent);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 90px 20px;
+}

@@ -1,0 +1,42 @@
+.store {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.game-tile {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text-main);
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  transition: 0.2s ease;
+}
+
+.game-tile:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.game-tile p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* ERA STRIPS */
+.g1 { border-left: 4px solid #8C6A3B; }
+.g2 { border-left: 4px solid #D4AF37; }
+.g3 { border-left: 4px solid #A88B5A; }
+.g4 { border-left: 4px solid #4DA3FF; }
+.g5 { border-left: 4px solid #B26CFF; }
