@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modding</title>
+  <link rel="stylesheet" href="../../../../style/game/ti-ucw.css">
+  <link rel="stylesheet" href="../../../../style/util/sidebar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+
+
+.codeblock {
+  background: var(--panel);
+  border: 1px solid var(--border);
+
+  padding: 25px 30px;
+
+  width: 100%;        /* 🔥 forces full left alignment */
+  max-width: 1000px;  /* optional safety cap */
+
+  margin: 40px 0;     /* ❌ no auto-centering */
+}
+
+.codeblock pre {
+  margin: 0;
+
+  font-family: monospace;
+  color: var(--text);
+  line-height: 1.6;
+
+  white-space: pre;
+  overflow-x: auto;
+
+  text-align: left;   /* 🔥 guarantees left alignment */
+}
+  </style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="logo">Terra Incognita</div>
+  <div class="links">
+    <a href="../wiki.html">Wiki</a>
+    <a href="../modding.html">Modding</a>
+    <a href="../guides.html">Guides</a>
+    <a href="../lore.html">Lore</a>
+    <a href="../downloads.html">Downloads</a>
+  </div>
+</nav>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <a href="../modding.html">Getting Started</a>
+    <a href="structure.html" class="active">File Structure</a>
+    <a href="json.html">Json Ruleset</a>
+    <a href="events.html">Event</a>
+    <a href="burgs.html">Burg</a>
+    <a href="provinces.html">Province</a>
+    <a href="states.html">State</a>
+    <a href="cultures.html">Culture</a>
+    <a href="religions.html">Religion</a>
+    <a href="routes.html">Route</a>
+    <a href="zones.html">Zone</a>
+    <a href="rivers.html">River</a>
+    <a href="biomes.html">Biome</a>
+    <a href="namebases.html">Namebase</a>
+    <a href="notes.html">Note</a>
+    <a href="markers.html">Marker</a>
+  </aside>
+
+  <main class="content">
+    <section class="section alt">
+      <h2>File Structure</h2>
+      <p class="section-sub">
+        Files must reflect what is shown in the base game. 
+        <br>
+        <strong>Never modify the base game jsons!</strong>
+      </p>
+<div class="codeblock">
+<pre>
+📁 Mod Name/
+│
+📁 definitions/
+├── 📄 mesh.json                <-- Monolithic 2D/3D topological vertex grids & cellular lattices
+📁 biomes/
+└── 📄 [tag]_[name].json             <-- Global climate specifications and color matrices
+📁 cultures/
+└── 📄 [tag]_[name].json          <-- Ethnic tradition trees, weights, and heritage indexes
+📁 religions/
+└── 📄 [tag]_[name].json          <-- Global faith organizations and spiritual layout blocks
+📁 name bases/
+└── 📄 [tag]_[name].json          <-- Linguistic syllable structures for territory names
+📁 burgs/
+└── 📄 [tag]_[name].json          <-- Individual urban center sheets stripped of visual mesh nodes
+📁 states/
+└── 📄 [tag]_[name].json          <-- Sovereign nation configurations stripped of raw boundary arrays
+📁 provinces/
+└── 📄 [tag]_[name].json          <-- Sub-state regional profiles and localized demographics
+📁 rivers/
+└── 📄 [name].json               <-- Hydrological systems, width indexes, and discharge factors
+📁 routes/
+└── 📄 [group]-[id].json         <-- Commercial infrastructure paths and vector connections
+📁 markers/
+└── 📄 [type]-[id].json          <-- Interactive point-of-interest indicators (mines, ruins, dens)
+📁 zones/
+└── 📄 [name]_[id].json          <-- Macro climate bands and environmental boundary regulations
+</pre>
+</div>
+
+
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<footer class="footer">
+  ™ Torven Interactive 2026 • Powered by Aurelith v0.1.0
+</footer>
+
+</body>
+</html>

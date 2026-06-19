@@ -1,0 +1,31 @@
+/* LIST SECTION (FANDOM INDEX STYLE) */
+.list-section {
+  margin-top: 50px;
+}
+
+.list-title {
+  font-size: 20px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+
+.list a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}

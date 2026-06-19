@@ -1,0 +1,113 @@
+:root {
+  /* CORE PALETTE — DESATURATED / DEPRESSION ERA */
+  --bg: #120F0B;          /* dirty black-brown */
+  --panel: #1A1612;       /* old wood / soot */
+  --panel2: #14110E;      /* deeper shadow */
+
+  --accent: #A88B5A;      /* faded gold (not bright) */
+  --accent2: #7C6240;     /* old bronze */
+
+  --text: #E6DED2;        /* paper / faded parchment */
+  --muted: #A09384;       /* dust / aged ink */
+
+  --border: #2A221B;      /* rusted metal / worn leather */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, #1A1612, var(--bg));
+  color: var(--text);
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav a {
+  color: var(--muted);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 140px 20px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  letter-spacing: 4px;
+  color: var(--accent);
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+/* BUTTON */
+.btn {
+  background: var(--accent);
+  color: #1A120B;
+  padding: 10px 16px;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: var(--accent2);
+}
+
+/* SECTION */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 20px;
+  width: 260px;
+  border-radius: 4px;
+}
+
+/* subtle “old paper” feel */
+.card h3 {
+  color: var(--accent);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 90px 20px;
+}

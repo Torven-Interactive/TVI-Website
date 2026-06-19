@@ -1,0 +1,18 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* SECTION TITLE */
+.title {
+  font-size: 34px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 30px;
+  font-size: 14px;
+}

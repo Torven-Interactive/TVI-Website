@@ -1,0 +1,47 @@
+.sidebar {
+  width: 260px;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  padding: 20px;
+  height: calc(100vh - 80px); /* full screen minus nav */
+  overflow-y: auto;           /* 👈 makes it scroll */
+  position: sticky;           /* keeps it locked on screen */
+  top: 80px;                  /* matches nav height */
+}
+
+.sidebar h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 8px 0;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar a:hover {
+  color: var(--accent);
+}
+
+.sidebar a.active {
+    color: var(--accent);
+    background: rgba(145, 114, 63, 0.15);
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}

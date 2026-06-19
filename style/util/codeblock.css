@@ -1,0 +1,8 @@
+.codeblock {
+  margin-top: 20px;
+  padding: 15px;
+  background: #0d0f12;
+  border: 1px solid var(--border);
+  font-family: monospace;
+  color: #c9d1d9;
+}

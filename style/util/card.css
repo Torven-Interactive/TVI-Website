@@ -1,0 +1,46 @@
+/* CARDS */
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 25px;
+  width: 260px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.card-link:hover .card {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--accent);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Terra Incognita Wiki</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0b1116;
+  --panel: #161a1d;
+  --panel2: #1e1610;
+
+  --accent: #91723f;
+  --accent2: #e06c26;
+
+  --text: #f0e6d2;
+  --muted: #d9e3e6;
+  --border: #3c3228;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif; /* 🔥 matches your UI */
+}
+
+body {
+  background: radial-gradient(circle at top, #1b2631, var(--bg));
+  color: var(--text);
+}
+
+/* TOP NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(0,0,0,0.7);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  color: var(--accent);
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.links a {
+  margin: 0 12px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
+/* PAGE WRAPPER */
+.wrapper {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* SECTION TITLE */
+.title {
+  font-size: 34px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* GRID CARDS (FANDOM HUB STYLE) */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  width: 260px;
+  padding: 18px;
+  cursor: pointer;
+  transition: 0.25s;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* LIST SECTION (FANDOM INDEX STYLE) */
+.list-section {
+  margin-top: 50px;
+}
+
+.list-title {
+  font-size: 20px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+
+.list a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">TERRA INCOGNITA WIKI</div>
+  <div class="links">
+    <a href="#">Wiki</a>
+    <a href="#">Factions</a>
+    <a href="#">States</a>
+    <a href="#">Lore</a>
+    <a href="#">Modding</a>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="wrapper">
+
+  <div class="title">World Encyclopedia</div>
+  <div class="subtitle">
+    Explore factions, states, cultures, and systems within the Terra Incognita universe.
+  </div>
+
+  <!-- FACTION / STATE CARDS -->
+  <div class="grid">
+
+    <a class="card" href="#">
+      <h3>🏛 The Republic of Veyra</h3>
+      <p>Merchant-led coastal federation focused on trade dominance and naval power.</p>
+    </a>
+
+    <a class="card" href="#">
+      <h3>⚔ The Iron Clans</h3>
+      <p>Warlord-controlled mountain states built on conquest and resource control.</p>
+    </a>
+
+    <a class="card" href="#">
+      <h3>🌿 The Verdant Circle</h3>
+      <p>Druidic alliance governing deep forest regions and natural sanctuaries.</p>
+    </a>
+
+    <a class="card" href="#">
+      <h3>🏜 The Ash Dominion</h3>
+      <p>Desert empire built around ancient ruins and controlled water networks.</p>
+    </a>
+
+  </div>
+
+  <!-- LIST SECTION -->
+  <div class="list-section">
+
+    <div class="list-title">States Index</div>
+    <div class="list">
+      <a href="#">Northern Marches</a>
+      <a href="#">Sunken Coastline Confederacy</a>
+      <a href="#">Glass Desert Territories</a>
+      <a href="#">Frozen Expanse Clans</a>
+    </div>
+
+  </div>
+
+  <div class="list-section">
+
+    <div class="list-title">Cultures</div>
+    <div class="list">
+      <a href="#">Veyran Maritime Culture</a>
+      <a href="#">Ashlander Nomads</a>
+      <a href="#">Highland Forge Tribes</a>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  Terra Incognita Wiki System — Fandom Style Prototype
+</div>
+
+</body>
+</html>
